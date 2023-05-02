@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import Error from './Error';
 import { generarId } from '../helpers';
-
+import Error from './Error';
 const Formulario = ({nota, setNota, actualizarNota, crearNota}) => {
     
     const [titulo, setTitulo] = useState('');

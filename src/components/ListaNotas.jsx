@@ -3,7 +3,7 @@ import Spinner from './Spinner'
 
 const ListaNotas = ({notasBD, setNota, confirmDelete, goForm, loading}) => {
     return (
-        <div className='md:w-1/2'>
+    <div className='md:w-1/2'>
         <h2 className='text-white font-black text-3xl text-center my-10 mb-12'>Administra tus notas{''}
             <span className='text-indigo-600'> aquí</span>
         </h2>      
