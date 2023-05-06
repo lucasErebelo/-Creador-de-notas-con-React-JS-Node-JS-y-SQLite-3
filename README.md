@@ -1,2 +1,1 @@
-# creador-notas
-Proyecto Full Stack con React Js, Node Js y SQLite 3
+# Creador de notas con React JS, Node JS y SQLite 3
