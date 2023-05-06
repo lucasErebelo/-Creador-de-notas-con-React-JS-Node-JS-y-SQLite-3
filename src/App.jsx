@@ -46,7 +46,6 @@ function App() {
       })
       .then(response => response.json())
       .then(data => {
-          console.log('Datos enviados:', data);
           setNotas([...notas, objetoNota]);
           setLoading(false);
           notasInDatabase(); 
@@ -74,7 +73,6 @@ function App() {
         return response.json();
       })
       .then(data => {
-        console.log('Nota actualizada', data);
         const notasActualizadas = notas.map( notaState => notaState.id === nota.id ? objetoNota : notaState)
         setNotas(notasActualizadas);
         setLoading(false);
@@ -103,7 +101,6 @@ function App() {
           return response.json();
         })
         .then(data => {
-          console.log('Nota eliminada', data);
           const notasNoEliminadas = notas.filter(nota => nota.id !== id);
           setNotas(notasNoEliminadas);
           setLoading(false);

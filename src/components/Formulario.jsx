@@ -21,7 +21,6 @@ const Formulario = ({nota, setNota, actualizarNota, crearNota}) => {
         e.preventDefault();
 
         if([titulo,fecha,cuerpo].includes('')){
-            console.log('Faltan llenar campos.'); 
             setError(true);
         }else{
             setError(false);
@@ -32,12 +31,10 @@ const Formulario = ({nota, setNota, actualizarNota, crearNota}) => {
             }
 
             if(nota.id){
-                console.log('Editando');
                 objetoNota.id = nota.id
                 actualizarNota(objetoNota.id, objetoNota);
                 setNota({});
             }else{
-                console.log('Agregando');
                 objetoNota.id = generarId()
                 crearNota(objetoNota);
             }

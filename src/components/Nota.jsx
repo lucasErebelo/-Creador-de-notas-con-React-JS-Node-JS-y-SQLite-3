@@ -9,7 +9,7 @@ const Nota = ({nota, setNota, confirmDelete, goForm}) => {
 
     return (
         <>
-            <div className='w-full flex flex-col bg-indigo-600 rounded-md p-7 mb-10'>
+            <div className='flex flex-col bg-indigo-600 rounded-md p-7 mb-6 mx-6'>
 
                 <h1 className='text-white mb-5 w-full text-left font-bold'>{titulo}</h1>
 
